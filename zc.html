@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/zc.css">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-weui.css">
+</head>
+<body>
+	
+	<div class="zc">
+    	<div class="zc-1">
+        	会员注册
+        </div>
+        <div class="zc-2">
+        <div class="zc-2-1"><span class="zc-22">注册ID号</span><input name="" type="text"  value="请输入ID号"></div>
+        	
+            <div class="zc-2-1"><span class="zc-22">填写密码</span><input name="" type="text"  value="请输入密码"></div>
+             <div class="zc-2-1"><span class="zc-22">重复密码</span><input name="" type="text"  value="请输入密码"></div>
+             <div class="zc-2-1"><span class="zc-22">手机号码</span><input name="" type="text"  value="请输入手机号"></div>
+              <div class="zc-2-11"><span class="zc-22">验证码</span><input name="" type="text"  value="请输入验证码">  <input style=" border-radius:0px; height:30px;width:100px; color:#fff; font-size:13px; " type="button" class="weui_btn weui_btn weui_btn_mini weui_btn_primary" value="获取验证码"  onclick="clickButton(this)"/></div>
+               <div class="zc-2-3"><span class="zc-2-3-1"><a href="#">注册</a></span><span class="zc-2-3-2"><a href="dl.html">帐号登录</a></span></div> 
+             	<div class="zc-2-4"><span class="zc-222">其他方式登录:</span><span class="zc-23"><a href="#"><img src="image/weixin.png" />微信</a></span><span class="zc-23"><a href="#"><img src="image/qq.png" />QQ</a></span><span class="zc-23"><a href="#"><img src="image/weibo.png" />微博</a></span></div>
+               
+                
+          
+        
+        </div>
+    
+    </div>
+	
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script> 
+<script type="text/javascript">
+function clickButton(obj){
+    var obj = $(obj);
+    obj.attr("disabled","disabled");/*按钮倒计时*/
+    var time = 60;
+    var set=setInterval(function(){
+    obj.val(--time+"(s)");
+    }, 1000);/*等待时间*/
+    setTimeout(function(){
+    obj.attr("disabled",false).val("重新获取验证码");/*倒计时*/
+    clearInterval(set);
+    }, 60000);
+}
+
+</script>
+	
+</body>
+</html>

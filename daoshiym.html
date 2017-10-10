@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/daoshiym.css">
+    <script type="text/javascript" src="js/adddate.js" ></script> 
+</head>
+<body>
+<style type="text/css">
+
+
+.weixinAudio {
+	line-height: 1.5;
+}
+
+.audio_area {
+	display: inline-block;
+
+	vertical-align: top;
+	margin: 0px 1px 0px 0;
+	font-size: 0;
+	position: relative;
+	font-weight: 400;
+	text-decoration: none;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.audio_wrp {
+	
+	
+	overflow: hidden;
+	
+}
+
+.audio_play_area {
+	float: left;
+
+	font-size: 0;
+	width: 18px;
+	height: 25px;
+}
+
+.playing .audio_play_area .icon_audio_default {
+	display: block;
+}
+
+.audio_play_area .icon_audio_default {
+	background: transparent url(img/iconloop.png) no-repeat 0 0;
+	width: 18px;
+	height: 25px;
+	vertical-align: middle;
+	display: inline-block;
+	-webkit-background-size: 54px 25px;
+	background-size: 54px 25px;
+	background-position: -36px center;
+}
+
+.audio_play_area .icon_audio_playing {
+	background: transparent url(img/iconloop.png) no-repeat 0 0;
+	width: 18px;
+	height: 25px;
+	vertical-align: middle;
+	display: inline-block;
+	-webkit-background-size: 54px 25px;
+	background-size: 54px 25px;
+	-webkit-animation: audio_playing 1s infinite;
+	background-position: 0px center;
+	display: none;
+}
+
+.audio_area .pic_audio_default {
+	display: none;
+	width: 18px;
+}
+
+.tips_global {
+	color: #8c8c8c;
+}
+
+.audio_area .audio_length {
+	float: right;
+	font-size: 14px;
+	margin-top: 3px;
+	margin-left: 1em;
+}
+
+.audio_info_area {
+	overflow: hidden;
+}
+
+.audio_area .audio_title {
+	font-weight: 400;
+	font-size: 17px;
+	margin-top: -2px;
+	margin-bottom: -3px;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+.audio_area .audio_source {
+	font-size: 14px;
+}
+
+.audio_area .progress_bar {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #0cbb08;
+	height: 2px;
+}
+
+.playing .audio_play_area .icon_audio_default {
+	display: none;
+}
+
+.playing .audio_play_area .icon_audio_playing {
+	display: inline-block;
+}
+
+@-webkit-keyframes audio_playing {
+	30% {
+		background-position: 0px center;
+	}
+	31% {
+		background-position: -18px center;
+	}
+	61% {
+		background-position: -18px center;
+	}
+	61.5% {
+		background-position: -36px center;
+	}
+	100% {
+		background-position: -36px center;
+	}
+}
+</style>
+	<div class="top">
+		<div class="top_2">
+			<li>
+				<a href="daoshi.html"><img src="image/fanhui.png" width="50px" height="50px"></a>
+			</li>
+			<li style="text-align: left;width: 60%;">周含悦_导师_聊天吧</li>
+			<li></li>
+		</div>
+	</div>
+	<div class="center">
+		<div class="center_1">
+			<img src="image/beijing.png" width="100%" height="180px" style="position: absolute;z-index: 0;">
+			<div class="c_left">
+				<img src="image/logo.jpg" width="110px" height="110px" style="border-radius: 50%;margin-top: 30px;margin-left: 15%;">
+				<div class="cl_bottom">
+					<span class="weixinAudio"><audio src="yy.mp3" id="media" width="1" height="1"  ></audio><span id="audio_area" class="db audio_area">
+	<span class="audio_wrp db"><span class="audio_play_area"><i class="icon_audio_default"></i><i class="icon_audio_playing"></i></span></span></span> 23"</span>
+				</div>
+			</div>
+			<div class="c_right">
+				<p style="margin-top: 60px;">周含悦<span><img src="image/xb1.png" width="25px" height="25px"></span><span>知音 导师 专家</span></p>
+				<p style="margin-top: 10px;font-size: 14px;">*** *** *** </p>
+				<p style="font-size: 14px;">人关注</span></p>
+				<div class="cr_1 on">关注</div>
+			</div>
+		</div>
+		<div class="center_2">
+			<div>语音</div>
+			<div>文字</div>
+		</div>
+		<div class="center_3">
+			<p>ID：<span>10038</span>咨询经验：<span>222小时</span></p>
+			<p style="font:12px/15px '';margin-top: 5px;">收费：<span>900元/小时</span></p>
+		</div>
+		<p class="center_4">咨询打分：<span>★★★★★★★★★★★</span><span>100</span><span>分</span></p>
+		<p class="center_4"><span>对咨询不满意。</span>我要<A href="tousu.html" style="text-decoration:none;"><span style=" color: white;padding: 5px;background: #9AD054;">投诉</span></A></p>
+		<div class="picture">
+			<img src="image/picture.png" width="100%" height="100%">
+		</div>
+		<div class="picture">
+			<img src="image/picture.png" width="100%" height="100%">
+		</div>
+		<div class="center_5">
+			<h4 class="c5_0">擅长解决</h4>
+            <div id="box" class="box">
+            <div style="margin-bottom:20px;">
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+            <p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+			<p>家庭矛盾 &nbsp;夫妻不和 &nbsp;孩子叛逆 &nbsp;孩子叛逆 &nbsp;孩子叛逆</p>
+            </div>
+            </div>
+			<div class="c5_1"></div>
+			<h4 class="c5_0" style="margin-top: 30px;border:none;">郑重承诺</h4>
+            <div id="box1" class="box">
+            <div style="margin-bottom:20px;">
+			<p  style="text-indent: 2em;">我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专家我是聊天吧健康心理咨询专</p>
+            </div>
+            </div>
+			<div class="c5_3"><a href="jubao.html">我要举报</a></div>
+			<div class="c5_1"></div>
+			<div class="c5_4">
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+			</div>
+			<h4 class="c5_5">预约咨询</h4>
+			<hr color="#9AD054">
+		</div>
+		<div class="c4_center">
+			<div class="demo">
+	
+	<span><b> <font color="#009300">选择日期：</font></b><input type="text" value="" id="" onclick="SelectDate(this,'yyyy-MM-dd')"/></span>
+</div>	
+			
+		</div>
+		<table class="center_6" cellspacing="0">
+			<tr>
+				<th>日期</th>
+				<th>时间段</th>
+				<th>咨询方式</th>
+				<th>选择</th>
+			</tr>
+			<tr>
+				<td rowspan="2">2017</td>
+				<td>19:00-20:00</td>
+				<td><p>138784***12</p></td>
+				<td><input type="checkbox" name="like"></td>
+			</tr>
+			<tr>
+				<td>20:00-21:00</td>
+				<td><p>138784***12</p></td>
+				<td><input type="checkbox" name="like"></td>
+			</tr>
+			<tr>
+				<td rowspan="2">2017</td>
+				<td>19:00-20:00</td>
+				<td><p>138784***12</p></td>
+				<td><input type="checkbox" name="like"></td>
+			</tr>
+			<tr>
+				<td>19:00-20:00</td>
+				<td><p>138784***12</p></td>
+				<td><input type="checkbox" name="like"></td>
+			</tr>
+		</table>
+         
+		<p class="center_7">请选择咨询套餐：<span>900元/小时</span></p>
+      <div id="box3" class="box">
+      <div style="margin-bottom:20px;">
+		<table class="center_6" cellspacing="0">
+			<tr>
+				<th>有效期限</th>
+				<th>服务时长</th>
+				<th>费用</th>
+				<th>打折</th>
+				<th>优惠价</th>
+				<th>节省</th>
+				<th>选择</th>
+			</tr>
+			<tr>
+				<td>3个月</td>
+				<td>12小时</td>
+				<td>3600</td>
+				<td>9折</td>
+				<td>3456</td>
+				<td>144</td>
+				<td><input type="radio" name="li"></td>
+			</tr>
+			<tr>
+				<td>3个月</td>
+				<td>12小时</td>
+				<td>3600</td>
+				<td>9折</td>
+				<td>3456</td>
+				<td>144</td>
+				<td><input type="radio" name="li"></td>
+			</tr>
+			<tr>
+				<td>3个月</td>
+				<td>12小时</td>
+				<td>3600</td>
+				<td>9折</td>
+				<td>3456</td>
+				<td>144</td>
+				<td><input type="radio" name="li"></td>
+			</tr>
+            <tr>
+				<td>3个月</td>
+				<td>12小时</td>
+				<td>3600</td>
+				<td>9折</td>
+				<td>3456</td>
+				<td>144</td>
+				<td><input type="radio" name="li"></td>
+			</tr>
+            <tr>
+				<td>3个月</td>
+				<td>12小时</td>
+				<td>3600</td>
+				<td>9折</td>
+				<td>3456</td>
+				<td>144</td>
+				<td><input type="radio" name="li"></td>
+			</tr>
+            <tr>
+				<td>3个月</td>
+				<td>12小时</td>
+				<td>3600</td>
+				<td>9折</td>
+				<td>3456</td>
+				<td>144</td>
+				<td><input type="radio" name="li"></td>
+			</tr>
+		</table>
+        </div>
+        </div>
+       
+		<div class="center_5" style="margin-top:20px;">
+			<div class="c5_1"></div>
+			<div class="c5_6"><input type="checkbox" name=""> 我已阅读并理解了<span><a href="danye.html">《套餐服务条款》</a>、<a href="danye.html">《预约咨询协议》</a>、<a href="danye.html">《咨询须知》</a></span>，完全同意里面的约定，我自愿预约咨询服务，为自己的行为负全部责任。</div>
+			<div class="c5_3" style="background: #9AD054;color: white;">确定</div>
+			<hr color="#ddd" style="margin-top: 20px;">
+			<h4 class="c5_5">咨询感悟</h4>
+			<hr color="#9AD054">
+			<hr color="#ddd" style="margin-top: 20px;">
+			<div class="c5_7">
+				<div>《</div>
+				<div>1</div>
+				<div>》</div>
+			</div>
+			<hr color="#ddd" style="margin-top: 20px;">
+			<h4 class="c5_5">心理课程</h4>
+			<hr color="#9AD054">
+		</div>
+		<div class="center_8">
+			<h4 class="c5_0" style="margin-top: 20px;">心理课程</h4>
+			
+            <div id="box2" class="box">
+            <div style="margin-bottom:20px;" >
+          <div class="c4_bottom">  <a href="daoshikcxq.html">
+				<div style="width: 35%;height: 110px;margin-left: 3%;margin-top: 10px;float: left;margin-right: 5px;"><img src="image/left.png" width="100%" height="100%"></div>
+				<div class="c4b_right">
+					<p>《脉轮舞蹈》——心灵成长课程</p>
+					<p style="margin-top: 20px;"><span style="padding-left: 5px;">导师</span><span style="padding-left: 20px;">周含悦</span><span style="padding-left: 40px;color: #F906F9;">690元</span></p>
+					<p style="margin-top: 15px;"><span><img src="image/xinxi.png" width="20px" height="20px"></span><span style="padding-left: 5px;color: #6D6D6D;">132</span><span style="padding-left: 25px;"><img src="image/xinxi1.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">0</span><span style="padding-left: 25px;"><img src="image/xinxi2.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">690</span></p>
+				</div></a>
+			</div>
+			<div class="c4_bottom">
+			<a href="daoshikcxq.html">	<div style="width: 35%;height: 110px;margin-left: 3%;margin-top: 10px;float: left;margin-right: 5px;"><img src="image/left.png" width="100%" height="100%"></div>
+				<div class="c4b_right">
+					<p>《脉轮舞蹈》——心灵成长课程</p>
+					<p style="margin-top: 20px;"><span style="padding-left: 5px;">导师</span><span style="padding-left: 20px;">周含悦</span><span style="padding-left: 40px;color: #F906F9;">690元</span></p>
+					<p style="margin-top: 15px;"><span><img src="image/xinxi.png" width="20px" height="20px"></span><span style="padding-left: 5px;color: #6D6D6D;">132</span><span style="padding-left: 25px;"><img src="image/xinxi1.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">0</span><span style="padding-left: 25px;"><img src="image/xinxi2.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">690</span></p>
+				</div></a>
+			</div>
+			<div class="c4_bottom">
+			<a href="daoshikcxq.html">	<div style="width: 35%;height: 110px;margin-left: 3%;margin-top: 10px;float: left;margin-right: 5px;"><img src="image/left.png" width="100%" height="100%"></div>
+				<div class="c4b_right">
+					<p>《脉轮舞蹈》——心灵成长课程</p>
+					<p style="margin-top: 20px;"><span style="padding-left: 5px;">导师</span><span style="padding-left: 20px;">周含悦</span><span style="padding-left: 40px;color: #F906F9;">690元</span></p>
+					<p style="margin-top: 15px;"><span><img src="image/xinxi.png" width="20px" height="20px"></span><span style="padding-left: 5px;color: #6D6D6D;">132</span><span style="padding-left: 25px;"><img src="image/xinxi1.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">0</span><span style="padding-left: 25px;"><img src="image/xinxi2.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">690</span></p>
+				</div></a>
+			</div>
+            </div>
+            </div>
+			
+			<h4 class="c5_0" style="margin-top: 20px;">舞动身心</h4>
+             <div id="box4" class="box">
+                <div style="margin-bottom:20px;" >
+			<div class="c4_bottom">
+				<a href="daoshikcxq.html"><div style="width: 35%;height: 110px;margin-left: 3%;margin-top: 10px;float: left;margin-right: 5px;"><img src="image/left.png" width="100%" height="100%"></div>
+				<div class="c4b_right">
+					<p>《脉轮舞蹈》——心灵成长课程</p>
+					<p style="margin-top: 20px;"><span style="padding-left: 5px;">导师</span><span style="padding-left: 20px;">周含悦</span><span style="padding-left: 40px;color: #F906F9;">690元</span></p>
+					<p style="margin-top: 15px;"><span><img src="image/xinxi.png" width="20px" height="20px"></span><span style="padding-left: 5px;color: #6D6D6D;">132</span><span style="padding-left: 25px;"><img src="image/xinxi1.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">0</span><span style="padding-left: 25px;"><img src="image/xinxi2.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">690</span></p>
+				</div></a>
+			</div>
+			<div class="c4_bottom">
+			<a href="daoshikcxq.html">	<div style="width: 35%;height: 110px;margin-left: 3%;margin-top: 10px;float: left;margin-right: 5px;"><img src="image/left.png" width="100%" height="100%"></div>
+				<div class="c4b_right">
+					<p>《脉轮舞蹈》——心灵成长课程</p>
+					<p style="margin-top: 20px;"><span style="padding-left: 5px;">导师</span><span style="padding-left: 20px;">周含悦</span><span style="padding-left: 40px;color: #F906F9;">690元</span></p>
+					<p style="margin-top: 15px;"><span><img src="image/xinxi.png" width="20px" height="20px"></span><span style="padding-left: 5px;color: #6D6D6D;">132</span><span style="padding-left: 25px;"><img src="image/xinxi1.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">0</span><span style="padding-left: 25px;"><img src="image/xinxi2.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">690</span></p>
+				</div></a>
+			</div>
+			<div class="c4_bottom">
+				<a href="daoshikcxq.html"><div style="width: 35%;height: 110px;margin-left: 3%;margin-top: 10px;float: left;margin-right: 5px;"><img src="image/left.png" width="100%" height="100%"></div>
+				<div class="c4b_right">
+					<p>《脉轮舞蹈》——心灵成长课程</p>
+					<p style="margin-top: 20px;"><span style="padding-left: 5px;">导师</span><span style="padding-left: 20px;">周含悦</span><span style="padding-left: 40px;color: #F906F9;">690元</span></p>
+					<p style="margin-top: 15px;"><span><img src="image/xinxi.png" width="20px" height="20px"></span><span style="padding-left: 5px;color: #6D6D6D;">132</span><span style="padding-left: 25px;"><img src="image/xinxi1.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">0</span><span style="padding-left: 25px;"><img src="image/xinxi2.png" width="20px" height="20px"></span><span style="color: #6D6D6D;">690</span></p>
+				</div></a>
+			</div>
+            </div>
+			</div>
+		</div>
+		<div class="center_9">
+			<h4 class="c5_5">专栏文章</h4>
+			<hr color="#9AD054">
+			<h4 class="c5_0" style="margin-top: 20px;">心灵对话</h4>
+			<div class="c4_bottom1">
+				<a href="daoshiwzxq.html"><div style="width: 60px;height: 60px;margin-left: 3%;margin-top: 0px;float: left;margin-right: 10px;"><img src="image/logo.jpg" width="100%" height="100%"></div>
+				<div class="c4b_right1">
+					<p>最深的陪伴是心灵<span style="color: #6D6D6D;float: right;margin-right: 5px;">2017-8-25</span><span style="float: right;margin-right: 2px; "><img src="image/time.png"></span></p>
+					<p><span style="color: #262626;">作者</span><span style="padding-left: 10px;">周含悦</span>
+					<span style="color: #6D6D6D;padding-left: 2%;"><img src="image/xinxi2.png">132</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/xinxi1.png">0</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/zan.png">690</span></p>
+				</div></a>
+			</div>
+			<div class="c4_bottom1">
+				<a href="daoshiwzxq.html"><div style="width: 60px;height: 60px;margin-left: 3%;margin-top: 0px;float: left;margin-right: 10px;"><img src="image/logo.jpg" width="100%" height="100%"></div>
+				<div class="c4b_right1">
+					<p>最深的陪伴是心灵<span style="color: #6D6D6D;float: right;margin-right: 5px;">2017-8-25</span><span style="float: right;margin-right: 2px; "><img src="image/time.png"></span></p>
+					<p><span style="color: #262626;">作者</span><span style="padding-left: 10px;">周含悦</span>
+					<span style="color: #6D6D6D;padding-left:2%;"><img src="image/xinxi2.png">132</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/xinxi1.png">0</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/zan.png">690</span></p>
+				</div></a>
+			</div>
+			<div class="c9_1">
+				<li style="width: 12%;">首页</li>
+				<li><</li>
+				<li>1</li>
+				<li style="background: #333333;color: white;">2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>></li>
+				<li style="width: 12%;">尾页</li>
+			</div>
+			<h4 class="c5_0" style="margin-top: 20px;">职场心理</h4>
+			<div class="c4_bottom1">
+			<a href="daoshiwzxq.html">	<div style="width: 60px;height: 60px;margin-left: 3%;margin-top: 0px;float: left;margin-right: 10px;"><img src="image/logo.jpg" width="100%" height="100%"></div>
+				<div class="c4b_right1">
+					<p>最深的陪伴是心灵<span style="color: #6D6D6D;float: right;margin-right: 5px;">2017-8-25</span><span style="float: right;margin-right: 2px; "><img src="image/time.png"></span></p>
+					<p><span style="color: #262626;">作者</span><span style="padding-left: 10px;">周含悦</span>
+					<span style="color: #6D6D6D;padding-left: 2%;"><img src="image/xinxi2.png">132</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/xinxi1.png">0</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/zan.png">690</span></p>
+				</div></a>
+			</div>
+			<div class="c4_bottom1">
+			<a href="daoshiwzxq.html">	<div style="width: 60px;height: 60px;margin-left: 3%;margin-top: 0px;float: left;margin-right: 10px;"><img src="image/logo.jpg" width="100%" height="100%"></div>
+				<div class="c4b_right1">
+					<p>最深的陪伴是心灵<span style="color: #6D6D6D;float: right;margin-right: 5px;">2017-8-25</span><span style="float: right;margin-right: 2px; "><img src="image/time.png"></span></p>
+					<p><span style="color: #262626;">作者</span><span style="padding-left: 10px;">周含悦</span>
+					<span style="color: #6D6D6D;padding-left: 2%;"><img src="image/xinxi2.png">132</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/xinxi1.png">0</span><span style="padding-left: 10px;color: #6D6D6D;"><img src="image/zan.png">690</span></p>
+				</div></a>
+			</div>
+			<div class="c9_1">
+				<li style="width: 12%;">首页</li>
+				<li><</li>
+				<li>1</li>
+				<li style="background: #333333;color: white;">2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>></li>
+				<li style="width: 12%;">尾页</li>
+			</div>
+			<div class="c9_2">
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+				<li>
+					<p>谈心</p>
+					<p>咨询</p>
+				</li>
+			</div>
+			<div class="c9_left"></div>
+			<p class="c9_3">广告</p>
+			<div class="c9_left"></div>
+			<div class="bottom">
+				<img src="image/bottom.png" width="100%" height="100%">
+			</div>
+		</div>
+	</div>
+    
+    <script> 
+function show(){ 
+var box = document.getElementById("box"); 
+var text = box.innerHTML; 
+var newBox = document.createElement("div"); 
+var btn = document.createElement("a"); 
+newBox.innerHTML = text.substring(0,215); 
+btn.innerHTML = text.length > 215 ? "...展开" : ""; 
+btn.href = "###"; 
+btn.onclick = function(){ 
+if (btn.innerHTML == "...展开"){ 
+btn.innerHTML = "收起"; 
+newBox.innerHTML = text; 
+}else{ 
+btn.innerHTML = "...展开"; 
+newBox.innerHTML = text.substring(0,215); 
+} 
+} 
+box.innerHTML = ""; 
+box.appendChild(newBox); 
+box.appendChild(btn); 
+} 
+show(); 
+</script>
+<script> 
+function show(){ 
+var box = document.getElementById("box2"); 
+var text = box.innerHTML; 
+var newBox = document.createElement("div"); 
+var btn = document.createElement("a"); 
+newBox.innerHTML = text.substring(0,1810); 
+btn.innerHTML = text.length > 1810 ? "查看更多" : ""; 
+btn.href = "###"; 
+btn.onclick = function(){ 
+if (btn.innerHTML == "查看更多"){ 
+btn.innerHTML = "收起"; 
+newBox.innerHTML = text; 
+}else{ 
+btn.innerHTML = "查看更多"; 
+newBox.innerHTML = text.substring(0,1810); 
+} 
+} 
+box.innerHTML = ""; 
+box.appendChild(newBox); 
+box.appendChild(btn); 
+} 
+show(); 
+</script>
+<script> 
+function show(){ 
+var box = document.getElementById("box4"); 
+var text = box.innerHTML; 
+var newBox = document.createElement("div"); 
+var btn = document.createElement("a"); 
+newBox.innerHTML = text.substring(0,1810); 
+btn.innerHTML = text.length > 1810 ? "查看更多" : ""; 
+btn.href = "###"; 
+btn.onclick = function(){ 
+if (btn.innerHTML == "查看更多"){ 
+btn.innerHTML = "收起"; 
+newBox.innerHTML = text; 
+}else{ 
+btn.innerHTML = "查看更多"; 
+newBox.innerHTML = text.substring(0,1810); 
+} 
+} 
+box.innerHTML = ""; 
+box.appendChild(newBox); 
+box.appendChild(btn); 
+} 
+show(); 
+</script>
+     <script> 
+function show(){ 
+var box = document.getElementById("box3"); 
+var text = box.innerHTML; 
+var newBox = document.createElement("div"); 
+var btn = document.createElement("a"); 
+newBox.innerHTML = text.substring(0,1019); 
+btn.innerHTML = text.length > 1019 ? "查看更多" : ""; 
+btn.href = "###"; 
+btn.onclick = function(){ 
+if (btn.innerHTML == "查看更多"){ 
+btn.innerHTML = "收起"; 
+newBox.innerHTML = text; 
+}else{ 
+btn.innerHTML = "查看更多"; 
+newBox.innerHTML = text.substring(0,1019); 
+} 
+} 
+box.innerHTML = ""; 
+box.appendChild(newBox); 
+box.appendChild(btn); 
+} 
+show(); 
+</script>
+    
+    <script> 
+function show(){ 
+var box = document.getElementById("box1"); 
+
+var text = box.innerHTML; 
+var newBox = document.createElement("div"); 
+var btn = document.createElement("a"); 
+newBox.innerHTML = text.substring(0,130); 
+btn.innerHTML = text.length > 130 ? "...展开" : ""; 
+btn.href = "###"; 
+btn.onclick = function(){ 
+if (btn.innerHTML == "...展开"){ 
+btn.innerHTML = "收起"; 
+newBox.innerHTML = text; 
+}else{ 
+btn.innerHTML = "...展开"; 
+newBox.innerHTML = text.substring(0,130); 
+} 
+} 
+box.innerHTML = ""; 
+box.appendChild(newBox); 
+box.appendChild(btn); 
+} 
+show(); 
+</script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/weixinAudio.js" type="text/javascript"></script>
+<script type="text/javascript">
+$('.weixinAudio').weixinAudio({});
+</script>
+</body>
+</html>
